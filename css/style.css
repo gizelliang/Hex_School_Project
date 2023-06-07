@@ -271,10 +271,313 @@ line-height: 150%;
   .recommend-name img{
     margin-right: 16px;
   }
-
- 
-
-
-
-
+  .bg-white{
+    background-color: #fff;
+    max-width:1920px;
+    border-radius:160px;
+    
+  }
+.tools-list ul{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+   
+}
   
+.tools-list li{
+   width:416px;
+   border-radius:16px;
+   
+   margin-right:24px;
+   margin-top: 24px;
+   border:1px solid#F2F2F2;
+}
+
+.image{
+    overflow:hidden;
+}
+.image img{
+    transition: transform 0.5s linear;
+}
+.image:hover img{
+    transform: scale(1.2);
+   
+}
+/*https://stackoverflow.com/questions/43219852/image-overflowhidden-with-scale-transition*/
+.tools>h2{
+    text-align:center;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 120%;
+    padding-top: 160px;
+    padding-bottom: 80px;
+    color:black;
+}
+.tools{
+    padding-bottom: 250px;
+    
+}
+
+.tools-search{
+  display:flex;
+
+}
+
+.tools-search>ul{
+    display: flex;
+    margin:auto;
+    color:black;
+    margin-top: 44px;
+    margin-bottom: 60px;
+
+}
+.tools-search li{
+    margin-right:24px;
+    
+}
+.tools-search a{
+    text-decoration: none;
+    color: #919191;
+    font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+}
+.tools-search a:hover{
+    color: #020202;
+    width: 32px;
+    height: 24px;
+    background: #F2F2F2;
+border-radius: 16px;
+
+padding:8px 16px 8px 16px;
+
+}
+
+
+.tools-ai{
+    display:flex;
+    height:64px;
+    justify-content: space-between;
+    padding:20px 32px;
+    border:1px solid#F2F2F2;
+}
+
+.tools-ai>span{
+font-weight: 900;
+font-size: 16px;
+line-height: 150%;
+color: black;
+}
+.tools-tag{
+    display: flex;
+    height:64px;
+   
+    justify-content: space-between;
+    padding:20px 32px;
+    border:1px solid#F2F2F2;
+}
+
+.tools-tag span{
+    color: #000;
+}
+.introduction{
+    padding:20px 32px;
+    height:118px;
+    
+}
+.introduction>h2{
+    margin-bottom:12px;
+    font-weight: 900;
+font-size: 20px;
+line-height: 120%;
+color: black;
+}
+.introduction>p{
+    font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+color:#525252;
+}
+.dropdown a {
+    text-decoration: none;
+    display:block;
+    color:#000;
+    
+  }
+  
+  .fs-normal {
+    font-size: 16px;
+  }
+  
+  .mb-8 {
+    margin-bottom: 8px;
+  }
+  
+  .ml-12 {
+    margin-left: 12px;
+  }
+  
+  .mt-8 {
+    margin-top: 8px;
+  }
+  
+  .wrap {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .filter {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .dropdown {
+    position: relative;
+    
+  }
+  
+  .dropdown-btn {
+    display: flex;
+    align-items: center;
+    
+    background-color: #ffffff;
+    border: 1px solid #F2F2F2;
+    padding-top: 20px;
+    padding-left: 40px;
+    padding-right: 32px;
+    padding-bottom: 20px;
+    border-radius: 16px;
+  }
+  
+  .dropdown-btn:hover {
+    border-color: #000000;
+  }
+  .dropdown-btnText{
+    color:black;
+  }
+  .dropdown-menu {
+    position:absolute;
+    right:0;
+    display:none;
+    margin-top: 4px;
+    box-shadow: 0px 2px 20px rgba(0, 0, 0, 0.2);
+    padding: 20px 0;
+    border-radius: 16px;
+  }
+  
+  .dropdown-menu a {
+    padding: 4px 40px;
+    color: #000;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f2f2f2;
+  }
+  
+  .dropdown-menu.show {
+    display: block;
+  }
+
+  .pagination >ul{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 40px;
+    margin-right: 60px;
+    
+  }
+  .pagination a{
+    width: 48px;
+    height: 48px;
+    display: inline-block;
+    color:#020202;
+    font-weight: 700;
+font-size: 14px;
+line-height: 150%;
+
+text-decoration: none;
+    
+  }
+
+  .pagination a:hover{
+    background-color: #000;
+    color: #fff;
+    text-align: center;
+    border-radius: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .callToAction>h2{
+    font-weight: 900;
+font-size: 48px;
+line-height: 120%;
+color:white;
+margin-top: 158px;
+}
+.callToAction{
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    margin-bottom:180px;
+}
+
+
+  .btn2{
+    content: '';
+    background: url('/images/icons/call\ made.png') no-repeat;
+    background-position: center right 16px;
+}
+
+.siteMap{
+    display:flex;
+    justify-content: space-between;
+    padding: 80px 0;
+    margin-left:300px;
+    margin-right:300px; 
+    border-top:1px solid #fff;
+    border-bottom:1px solid #fff;
+}
+ .siteMap-list>ul{
+    color:#fff;
+    font-weight: 900;
+    font-size: 80px;
+    line-height: 120%;
+ }
+ .siteMap-logo>img{
+    width:188.99px;
+    height:40px;
+  }
+  .footer{
+    color:white;
+    display:flex;
+    margin-left:300px;
+    margin-right:300px;  
+    padding: 32px 0;
+    position:relative;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 150%;
+ }
+.social>ul{
+    display: flex;
+}
+.social li{
+    margin-right:20px;
+   
+}
+.copyright{
+    margin-right:100px;
+}
+ .to-top>a{
+    color:white;
+    text-decoration: none;
+    position:absolute;
+    right:0;
+    bottom:32px;
+    top:32px;
+  }
+
+  .to-top img{
+    padding-left: 20px;
+  }

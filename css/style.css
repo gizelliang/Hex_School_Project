@@ -11,8 +11,7 @@ image{
 }
 .container{
     background-color:black;
-    
-
+   
 }
 
 .header{
@@ -22,6 +21,7 @@ image{
     border-bottom:1px solid #fff;
     margin:0 auto;  
     background-color:black;
+  
 }
 
 .logo img{
@@ -51,7 +51,7 @@ image{
   display:none;
 }
 .banner{
-    
+
     margin-top:40px;  
 }
 .banner-text{

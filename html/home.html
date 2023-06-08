@@ -7,7 +7,6 @@
     <title>Document</title>
     <link rel="stylesheet" href="/css/reset.css"> 
     <link rel="stylesheet" href="/css/style.css">
-    <script src="/js/jquery-3.7.0.min.js" type=”text/javascript”></script>
     <script src="/js/all.js"  type=”text/javascript”></script>
     
 </head>
@@ -21,7 +20,9 @@
                 <ul>
                     <li><a href="#">首頁</a></li>
                     <li><a href="#">定價</a></li>
+          
                 </ul>
+                <img src="/images/icons/menu.png" alt="menu" >
             </div>
         </div>
 
@@ -165,10 +166,11 @@
                   <h2>這些超酷的應用，都來自AI工具王</h2>
       
 
-                  <!--<form>
-                      <input type="search" placeholder="輸入關鍵字搜尋">
-                      <button type="submit"></button>
-                    </form>-->
+                  <form action="/search" class="sr-bar">
+                    <img src="/images/icons/search.png" alt="search" class="sr-btn">
+                    <input type="search" placeholder="輸入關鍵字搜尋">
+                     
+                    </form>
                   <!--<input type="text" name="Search" placeholder="輸入關鍵字搜尋">-->
                   <div class="tools-search">
                     <div class="wrap">
@@ -182,8 +184,8 @@
                           </div>
                       </div>
                   </div>          
-                      <ul>
-                          <li><a href="#" class="gray">全部</a></li>
+                      <ul >
+                          <li><a href="#" >全部</a></li>
                           <li><a href="#">聊天</a></li>
                           <li><a href="#">影像辨識</a></li>
                           <li><a href="#">翻譯</a></li>
@@ -346,7 +348,7 @@
     </div>
     <div class="footer">
       <div class="copyright">
-        <p>AI工具王<img src="" alt="" >2023</p>
+        <p>AI工具王<img src="/images/copyright-logo-white.png" alt="copyright" style="width:auto;height:16px;vertical-align:middle;margin-right: 3px;margin-left: 3px;" >2023</p>
       </div>
       <div class="social">
         <ul>

@@ -12,20 +12,20 @@ image{
 .container{
     background-color:black;
     
+
 }
 
 .header{
-    
+    max-width:100%;
     display:flex;
     justify-content: space-between;
     border-bottom:1px solid #fff;
     margin:0 auto;  
-    margin-left: 310px;
-    margin-right: 310px;
+    background-color:black;
 }
 
 .logo img{
-    width:189px;
+    max-width:189px;
     padding-bottom: 28px;
     padding-top:20px;
 }
@@ -46,11 +46,16 @@ image{
     line-height: 1.5;
     padding-right: 20px;
 }
+
+.menu img{
+  display:none;
+}
 .banner{
     
-    margin-top:40px;
-    margin-left: 310px;
-    
+    margin-top:40px;  
+}
+.banner-text{
+  margin:0 auto;
 }
 .banner p{
     color:#fff;
@@ -74,20 +79,19 @@ input[type="button"] {
   justify-content: flex-end;
   overflow: hidden;
   height:180px;
-  margin: left 310px;
-    margin-right:310px;  
+ 
+     
   margin-bottom: 160px;
   margin-top:200px;
 }
 
 .service{
     max-width: 1296px;
-    margin-left:310px;
-    margin-right:310px;
+    margin:0 auto;
 }
 .service-text{
     display: flex;
-    
+    margin:0 auto;
     margin-bottom: 80px;
 }
 
@@ -103,7 +107,7 @@ input[type="button"] {
 
 .service-text>h2{
     font-size:32px;
-    width:20%;
+    max-width:30%;
     margin-right: 24px;
     
     font-weight: 900;
@@ -146,9 +150,8 @@ input[type="button"] {
 
 /*overflow area*/
 .overflow {
-    max-width: 1320px;
-    margin-left: auto;
-    margin-right: auto;
+    max-width: 100%;
+    margin:0 auto;
     padding-left: 12px;
     padding-right: 12px;
   }
@@ -211,9 +214,8 @@ input[type="button"] {
     max-width: initial;
   }
   .partner{
-    max-width: 1296px;
-    margin-left:310px;
-    margin-right:310px;
+    max-width: 100%;
+    margin:0 auto;
     margin-top: 160px;
 }
 
@@ -222,6 +224,7 @@ input[type="button"] {
 font-size: 32px;
 line-height: 120%;
 color:#fff;
+
 }
 
 .partner ul{
@@ -231,13 +234,13 @@ color:#fff;
 .recommend ul{
     max-width:1296px;
     display:flex;
-    margin-left:310px;
-    margin-right:310px; 
+    margin:0 auto;
     justify-content: center;
     margin-top: 160px;
   }
 
-  .recommend li{   
+  .recommend li{  
+    max-width:100%; 
     background: rgba(255, 255, 255, 0.08);
 border-radius: 16px;
 margin-right: 24px;
@@ -273,9 +276,9 @@ line-height: 150%;
   }
   .bg-white{
     background-color: #fff;
-    max-width:1920px;
+    max-width:100%;
     border-radius:160px;
-    
+    margin: 0 auto;
   }
 .tools-list ul{
     display:flex;
@@ -285,9 +288,8 @@ line-height: 150%;
 }
   
 .tools-list li{
-   width:416px;
+   max-width:416px;
    border-radius:16px;
-   
    margin-right:24px;
    margin-top: 24px;
    border:1px solid#F2F2F2;
@@ -320,7 +322,8 @@ line-height: 150%;
 
 .tools-search{
   display:flex;
-
+  margin-top: 24px;
+  
 }
 
 .tools-search>ul{
@@ -344,8 +347,8 @@ line-height: 150%;
 }
 .tools-search a:hover{
     color: #020202;
-    width: 32px;
-    height: 24px;
+    max-width: 32px;
+    height: auto;
     background: #F2F2F2;
 border-radius: 16px;
 
@@ -486,14 +489,19 @@ color:#525252;
     
   }
   .pagination a{
-    width: 48px;
-    height: 48px;
-    display: inline-block;
-    color:#020202;
+ 
     font-weight: 700;
 font-size: 14px;
 line-height: 150%;
-
+display: block;
+width: 48px;
+height: 48px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: black;
+margin: 2px;
+border-radius: 10px;
 text-decoration: none;
     
   }
@@ -533,9 +541,8 @@ margin-top: 158px;
     display:flex;
     justify-content: space-between;
     padding: 80px 0;
-    margin-left:300px;
-    margin-right:300px; 
-    border-top:1px solid #fff;
+    
+    border-top: 1px solid #fff;
     border-bottom:1px solid #fff;
 }
  .siteMap-list>ul{
@@ -551,8 +558,8 @@ margin-top: 158px;
   .footer{
     color:white;
     display:flex;
-    margin-left:300px;
-    margin-right:300px;  
+    margin:0 auto;
+   
     padding: 32px 0;
     position:relative;
     font-weight: 700;
@@ -581,3 +588,149 @@ margin-top: 158px;
   .to-top img{
     padding-left: 20px;
   }
+
+  .sr-bar {
+    padding: 10px;
+    border-radius: 10px;
+    max-width: 1240px;
+    margin: 0 auto;
+    background-color: rgb(247, 247, 247);
+  }
+
+  .sr-bar.sr-btn{
+    border: none;
+    margin-left: 15px;
+  }
+ 
+  .sr-bar input {
+    border: none;
+    background-color: rgb(247, 247, 247);
+    max-width: 1000px;
+  }
+
+  .first{
+    animation: slide 3s 0.7s infinite ease;
+  }
+
+  .second{
+    animation: slide 3s 0.35s infinite ease;
+  }
+
+  .third{
+    animation: slide 3s 0s infinite ease;
+  }
+
+  @keyframes slide {
+    0% {
+      transform: translateY(100%);
+    }
+    33% {
+      transform: translateY(0);
+    }
+    66% {
+      transform: translateY(0);
+    }
+    100% {
+      transform: translateY(-100%);
+    }
+  }
+
+    /*參考北五組謝宗佑 https://codepen.io/jzyifnzf-the-animator/pen/eYPPNjP*/
+@media(max-width:768px){
+  
+  .header{
+    max-width:100%;
+    background-color:black;
+  }
+  .menu a{
+    display:none;
+  }
+  .menu img{
+    display:block;
+  }
+  .logo img{
+    width:113.4px;
+}
+
+.service-text{
+  display:block;
+}
+  .service-text>h2{
+    margin-bottom: 24px;
+    max-width:100%;
+  }
+
+  .service-list {
+    display:block;
+   
+ }
+ .service-list li{
+  max-width:100%;  
+  margin-right:0;
+  margin-bottom:12px;
+}
+.recommend ul{
+  overflow:hidden;
+}
+.tools-search ul{
+ 
+  overflow-x: auto;
+}
+.tools-list li{
+  margin:auto;
+  margin-bottom:12px;
+  margin-top: 0px;
+  border-radius:20px;
+}
+.pagination >ul{
+ justify-content: center;
+ 
+}
+.callToAction>h2{ 
+  font-size: 32px;
+}
+.siteMap{
+  flex-direction:column-reverse;
+ 
+}
+.siteMap-logo>img{
+  margin-bottom:40px;
+}
+.footer{
+  flex-wrap:wrap;
+}
+.to-top>a{
+  right:40px;
+  bottom:92px;
+  top:32px;
+}
+.footer{
+  display: block;
+}
+.copyright{
+  margin-bottom:36px;
+}
+.footer{
+  margin-left:12px;
+}
+
+.tools>h2{
+font-size:32px;
+display:flex;
+flex-wrap:wrap;
+width:280px;
+margin: 0 auto;
+}
+.sr-bar {
+  margin-right:12px;
+  margin-left:12px;
+  
+}
+.tools-list li{
+  margin-right:12px;
+  margin-top: 12px;
+  margin-left: 12px;
+}
+}
+
+  
